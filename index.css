@@ -1,0 +1,73 @@
+body{
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.container{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container button{
+  margin: 0.5rem;
+  border-radius: 8px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.15rem;
+  color: white;
+  font-weight: bold;
+}
+
+.container button:hover{
+  cursor: pointer;
+}
+
+#accept-button{
+  background-color: teal;
+}
+
+#accept-button:hover{
+  background-color: #089797;
+  transition: all 0.5s ease;
+}
+
+#cancel-button{
+  background-color: #d90000;
+}
+
+#cancel-button:hover{
+  background-color: red;
+  transition: all 0.5s ease;
+}
+
+.popup{
+  position: absolute;
+  padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+  border: 3px solid grey;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+#thank-you-popup{
+    background-color: teal;
+    top: 5px;
+}
+
+#come-back-popup{
+    background-color: #d90000;
+    bottom: 5px;
+}
+
+.hide{
+  right: -200px;
+  transition: 1s;
+}
+
+.show{
+  right: 15px;
+  transition: 1s;
+}
